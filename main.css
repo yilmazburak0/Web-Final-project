@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #B4D4FF;
+}
+
+/* Side Navigation (sidenav) */
+
+/* Side Navigation (sidenav) */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #176B87;
+    padding-top: 20px;
+}
+
+
+.sidenav button {
+    color: black;
+    display: block;
+    width: calc(100% - 30px); /* Adjust width to accommodate margin */
+    padding: 15px;
+    text-align: left;
+    background-color: #EEF5FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Add margin at the bottom */
+    margin-left: 15px; /* Add left margin */
+    margin-right: 15px; /* Add right margin */
+    border-radius: 6px;
+}
+
+.sidenav button:last-child {
+    margin-bottom: 0; /* Remove margin for the last button to maintain layout */
+}
+
+.sidenav button:hover {
+    background-color: #abcefe;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Responsive Design */
+
+/* Main Content Styles */
+.main-content h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-content input[type="text"],
+.main-content input[type="number"],
+.main-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.main-content button {
+    padding: 10px 20px;
+    background-color: #176B87;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/* List and Form Styles */
+#courseList div, 
+#studentList div {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#courseList h2, 
+#studentList div > div {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+#studentList button.deleteStudentButton{
+    margin-right: 8px;
+}
+
+#studentList button.gradeUpdateButton{
+    margin-left: 16px;
+}
+
+/* Course List: Add margin between course action buttons */
+#courseList div button {
+    margin-right: 10px; /* Margin to the right of each button */
+    margin-bottom: 10px; /* Margin at the bottom of each button */
+}
+
+#courseList div button:last-child {
+    margin-right: 0; /* No margin for the last button to maintain alignment */
+}
+
+/* media Queries */
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidenav button {
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+    .main-content input[type="text"],
+    .main-content input[type="number"],
+    .main-content select,
+    .main-content button {
+        width: 100%;
+    }
+}
+
